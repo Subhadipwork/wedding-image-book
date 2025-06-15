@@ -2,22 +2,21 @@ import { atom, useAtom } from "jotai";
 import { useEffect } from "react";
 
 const pictures = [
-  "DSC00680",
-  "DSC00933",
-  "DSC00966",
-  "DSC00983",
+  "DSC_5744",
   "DSC_5781",
-  "DSC01040",
-  "DSC01064",
-  "DSC01071",
-  "DSC01103",
-  "DSC01145",
-  "DSC01420",
-  "DSC01461",
-  "DSC02031",
+  "DSC_5590",
   "DSC_5832",
-
-  "DSC02069",
+  "DSC_5580",
+  "PRO03001",
+  "WhatsAppImage8",
+  "WhatsAppImage3",
+  "WhatsAppImage2",
+  "WhatsAppImage4",
+  "WhatsAppImage5",
+  "WhatsAppImage7",
+  "PRO03211",
+  "DSC_5863",
+  "WhatsAppimg"
 ];
 
 export const pageAtom = atom(0);
@@ -61,22 +60,20 @@ export const UI = () => {
             {[...pages].map((_, index) => (
               <button
                 key={index}
-                className={`border-transparent hover:border-white transition-all duration-300  px-4 py-3 rounded-full  text-lg uppercase shrink-0 border ${
-                  index === page
+                className={`border-transparent hover:border-white transition-all duration-300  px-4 py-3 rounded-full  text-lg uppercase shrink-0 border ${index === page
                     ? "bg-white/90 text-black"
                     : "bg-black/30 text-white"
-                }`}
+                  }`}
                 onClick={() => setPage(index)}
               >
                 {index === 0 ? "Cover" : `Page ${index}`}
               </button>
             ))}
             <button
-              className={`border-transparent hover:border-white transition-all duration-300  px-4 py-3 rounded-full  text-lg uppercase shrink-0 border ${
-                page === pages.length
+              className={`border-transparent hover:border-white transition-all duration-300  px-4 py-3 rounded-full  text-lg uppercase shrink-0 border ${page === pages.length
                   ? "bg-white/90 text-black"
                   : "bg-black/30 text-white"
-              }`}
+                }`}
               onClick={() => setPage(pages.length)}
             >
               Back Cover
