@@ -14,7 +14,6 @@ const pictures = [
   "DSC01145",
   "DSC01420",
   "DSC01461",
-  "DSC_5580",
   "DSC02031",
   "DSC_5832",
 
